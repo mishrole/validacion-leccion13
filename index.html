@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lección 13</title>
+</head>
+<body style = "text-align: center">
+<section>
+	<h1><b>Formulario de datos</b></h1>
+	<form action="">
+		<label for="nombre">Nombre</label><br>
+		<input type="text" id = "textNombre" required="required" ><br><br>
+		<label for="apellidos">Apellidos</label><br>
+		<input type="text" id = "textApellidos" required="required" ><br><br>
+		<label for="telefono">Teléfono</label><br>
+		<input type="text" id = "textTelefono" required="required" maxlength = "9" pattern="[0-9]{9}"  title="teléfono inavalido"><br><br>
+		<label for="carro">Elige tu auto para continuar</label><br><br>
+		<select name="carro" id="carro" required="required">
+			<option value="">Elige tu auto</option>
+			<option value="0">Volvo</option>
+			<option value="1">Mercedes</option>
+			<option value="2">Audi</option>
+		</select><br><br>
+		<label for="email">Email</label><br>
+		<input type="email" id = "textEmail" required="required" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$"><br><br>	
+		<label for="password">Password</label><br>
+		<input type="password" id = "textPassword" required="required" minlength="6"><br><br>
+		<input type="submit" value = "enviar">
+	</form>	
+</section>
+</body>
+</html>
